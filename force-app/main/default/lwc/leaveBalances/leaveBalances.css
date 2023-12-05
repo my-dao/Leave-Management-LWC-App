@@ -1,0 +1,38 @@
+.container {
+    padding: 0; /* Remove padding inside the container card */
+    margin: 0 auto; /* Center the container card */
+    max-width: 100%; /* Ensure the container card doesn't exceed the width of its parent */
+}
+
+.custom-card {
+    text-align: center;
+    padding: 0.75rem; /* Adjust padding inside the inner cards */
+    border: 1px solid #dddbda;
+    border-radius: 0.25rem;
+    background: #f3f2f2;
+    box-shadow: none; /* Optional: remove box-shadow if it's causing overflow */
+}
+
+.slds-text-heading_large {
+    font-size: 1.25rem; /* Adjust font size if necessary */
+    font-weight: 700;
+}
+
+.slds-text-heading_small {
+    font-size: 1rem;
+    color: #0070d2;
+    margin-bottom: 0.5rem;
+}
+
+.slds-p-around_x-small {
+    padding: 0.5rem; /* Adjust the padding for the columns if needed */
+}
+
+.slds-col {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.icon-align {
+    margin-right: 0.5rem; /* Adjust spacing as needed */
+    align-self: center; /* Aligns the icon vertically with the text */
+}

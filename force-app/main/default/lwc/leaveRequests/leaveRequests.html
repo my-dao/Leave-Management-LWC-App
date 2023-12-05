@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Leave Requests" icon-name="custom:custom96">
+        <lightning-tabset>
+            <lightning-tab title="My Requests" label="My Requests">
+                <c-my-leaves onrefreshleaverequests={refreshLeaveReqeuestHandler}></c-my-leaves>
+            </lightning-tab>
+            <lightning-tab title="Leave Requests" label="My Team's Requests">
+                <c-team-requests lwc:ref="myLeavesComp"></c-team-requests>
+            </lightning-tab>
+        </lightning-tabset>
+    </lightning-card>
+</template>
