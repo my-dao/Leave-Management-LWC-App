@@ -36,7 +36,6 @@ public with sharing class LeaveApplicationController {
                 ORDER BY CreatedDate DESC
             ];
         } catch (Exception e) {
-            // Handle exceptions by throwing an AuraHandledException
             throw new AuraHandledException(e.getMessage());
         }
     }
@@ -66,7 +65,6 @@ public with sharing class LeaveApplicationController {
                 ORDER BY CreatedDate DESC
             ];
         } catch (Exception e) {
-            // Handle exceptions by throwing an AuraHandledException
             throw new AuraHandledException(e.getMessage());
         }
     }
@@ -86,7 +84,6 @@ public with sharing class LeaveApplicationController {
             }
             return balance;
         } catch (Exception e) {
-            // Handle exceptions by throwing an AuraHandledException
             throw new AuraHandledException(e.getMessage());
         }
     }
