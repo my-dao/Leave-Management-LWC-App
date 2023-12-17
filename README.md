@@ -14,7 +14,7 @@ The app is built on a Lightning App Page and includes the following components:
 2. **Leave Requests**: Divided into two sub-components:
    - **My Requests**: Shows the leave requests of the current user.
    - **My Team's Requests**: Displays the leave requests of the current user's team members.
-
+Notes: The Leave Request component was customised from https://github.com/forcefellow/Leave-Tracker-App.
 ## Data Model
 
 The app incorporates the following objects to manage its data:
