@@ -39,6 +39,10 @@
 		<name>GlobalValueSet</name>
 	</types>
 	<types>
+		<members>Leave_Request__c-LeaveRequest Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
 		<members>leaveBalances</members>
 		<members>leaveRequests</members>
 		<members>myLeaves</members>
