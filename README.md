@@ -38,6 +38,31 @@ The app incorporates the following objects to manage its data:
 2. The Org-Wide Default (OWD) setting for the Leave Request object is set to `Private`.
 3. A role hierarchy should be established to allow managers access to their team members' leave requests.
 
+## Getting Started
+###  Code Checkout and Org Authorization
+- Clone the repository to your local machine.
+- Use Salesforce CLI to authorize your Salesforce org where you intend to deploy the app. 
+```bash
+$ sfdx org:login:web --alias <org-alias> --instance-url <org-url> --set-default
+```
+### Deploy Application Components
+- Navigate to the root directory of the project in your terminal.
+- Deploy the components to your Salesforce org
+```bash
+$ sf project deploy start -x manifest/package.xml
+```
+
+### Configure Leave Entitlements
+- Enter data for the `Leave Entitlements` custom setting
+
+### Assign Permission Sets
+- Assign the `Leave_Request_permission_set` to all Employee and Manager users in your org. This permission set is crucial for accessing and managing leave requests.
+- Ensure that the `Leave Requests` tab is visible to the necessary users. For admin users, this might require granting additional view permissions.
+
+### Establish Role Hierarchy
+- Set up a role hierarchy in your Salesforce org to reflect your organization's structure.
+- This hierarchy is essential for managers to access and manage their team members' leave requests.
+
 ## Notes
 
 - This application is a demo and implements only the most basic flow of a leave management system.
