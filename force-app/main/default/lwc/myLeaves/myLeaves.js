@@ -114,7 +114,7 @@ export default class MyLeaves extends LightningElement {
         "error"
       );
     } else {
-      this.refs.leaveReqeustFrom.submit(fields);
+      this.refs.leaveRequestForm.submit(fields);
     }
   }
   showToast(message, title = "success", variant = "success") {

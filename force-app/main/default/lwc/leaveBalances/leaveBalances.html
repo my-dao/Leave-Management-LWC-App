@@ -1,96 +1,76 @@
 <template>
-  <lightning-card title="My Leave Balances" icon-name="custom:custom14">
-    <div class="slds-grid slds-gutters_direct slds-wrap container">
-      <!-- Annual Leave Card -->
-      <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
-        <div class="custom-card slds-box slds-theme_default">
-          <span class="slds-text-heading_small">Annual Leave</span>
-          <p class="slds-text-heading_large">
-            <lightning-icon
-              icon-name="utility:world"
-              size="small"
-              class="icon-align"
-            ></lightning-icon
-            >{balance.annualLeaveHours}
-          </p>
-          <p>Hours Available</p>
+    <lightning-card title="My Leave Balances" icon-name="custom:custom14">
+        <div class="slds-grid slds-gutters_direct slds-wrap container">
+            <!-- Annual Leave Card -->
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
+                <div class="custom-card slds-box slds-theme_default">
+                    <span class="slds-text-heading_small">Annual Leave</span>
+                    <p class="slds-text-heading_large">
+                        <lightning-icon icon-name="utility:world" size="small" class="icon-align"></lightning-icon
+                        >{balance.annualLeaveHours}
+                    </p>
+                    <p>Hours Available</p>
+                </div>
+            </div>
+            <!-- Sick Leave Card -->
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
+                <div class="custom-card slds-box slds-theme_default">
+                    <span class="slds-text-heading_small">Sick Leave</span>
+                    <p class="slds-text-heading_large">
+                        <lightning-icon
+                            icon-name="utility:leave_conference"
+                            size="small"
+                            class="icon-align"
+                        ></lightning-icon>
+                        {balance.sickLeaveHours}
+                    </p>
+                    <p>Hours Available</p>
+                </div>
+            </div>
+            <!-- Work From Anywhere -->
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
+                <div class="custom-card slds-box slds-theme_default">
+                    <span class="slds-text-heading_small">Work from Anywhere</span>
+                    <p class="slds-text-heading_large">
+                        <lightning-icon icon-name="utility:location" size="small" class="icon-align"></lightning-icon>
+                        {balance.workFromAnywhere}
+                    </p>
+                    <p>Days Available</p>
+                </div>
+            </div>
+            <!-- Volunteer Leave -->
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
+                <div class="custom-card slds-box slds-theme_default">
+                    <span class="slds-text-heading_small">Volunteer Leave</span>
+                    <p class="slds-text-heading_large">
+                        <lightning-icon icon-name="utility:people" size="small" class="icon-align"></lightning-icon>
+                        {balance.volunteerLeave}
+                    </p>
+                    <p>Hours Available</p>
+                </div>
+            </div>
+            <!-- Unpaid Leave -->
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
+                <div class="custom-card slds-box slds-theme_default">
+                    <span class="slds-text-heading_small">Unpaid Leave</span>
+                    <p class="slds-text-heading_large">
+                        <lightning-icon icon-name="utility:clock" size="small" class="icon-align"></lightning-icon>
+                        {balance.unpaidLeave}
+                    </p>
+                    <p>Hours Available</p>
+                </div>
+            </div>
+            <!-- Bereavement Leave -->
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
+                <div class="custom-card slds-box slds-theme_default">
+                    <span class="slds-text-heading_small">Bereavement Leave</span>
+                    <p class="slds-text-heading_large">
+                        <lightning-icon icon-name="utility:heart" size="small" class="icon-align"></lightning-icon>
+                        {balance.bereavementLeave}
+                    </p>
+                    <p>Hours Available</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Sick Leave Card -->
-      <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
-        <div class="custom-card slds-box slds-theme_default">
-          <span class="slds-text-heading_small">Sick Leave</span>
-          <p class="slds-text-heading_large">
-            <lightning-icon
-              icon-name="utility:leave_conference"
-              size="small"
-              class="icon-align"
-            ></lightning-icon>
-            {balance.sickLeaveHours}
-          </p>
-          <p>Hours Available</p>
-        </div>
-      </div>
-      <!-- Work From Anywhere -->
-      <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
-        <div class="custom-card slds-box slds-theme_default">
-          <span class="slds-text-heading_small">Work from Anywhere</span>
-          <p class="slds-text-heading_large">
-            <lightning-icon
-              icon-name="utility:location"
-              size="small"
-              class="icon-align"
-            ></lightning-icon>
-            {balance.workFromAnywhere}
-          </p>
-          <p>Days Available</p>
-        </div>
-      </div>
-      <!-- Volunteer Leave -->
-      <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
-        <div class="custom-card slds-box slds-theme_default">
-          <span class="slds-text-heading_small">Volunteer Leave</span>
-          <p class="slds-text-heading_large">
-            <lightning-icon
-              icon-name="utility:people"
-              size="small"
-              class="icon-align"
-            ></lightning-icon>
-            {balance.volunteerLeave}
-          </p>
-          <p>Hours Available</p>
-        </div>
-      </div>
-      <!-- Unpaid Leave -->
-      <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
-        <div class="custom-card slds-box slds-theme_default">
-          <span class="slds-text-heading_small">Unpaid Leave</span>
-          <p class="slds-text-heading_large">
-            <lightning-icon
-              icon-name="utility:clock"
-              size="small"
-              class="icon-align"
-            ></lightning-icon>
-            {balance.unpaidLeave}
-          </p>
-          <p>Hours Available</p>
-        </div>
-      </div>
-      <!-- Bereavement Leave -->
-      <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12">
-        <div class="custom-card slds-box slds-theme_default">
-          <span class="slds-text-heading_small">Bereavement Leave</span>
-          <p class="slds-text-heading_large">
-            <lightning-icon
-              icon-name="utility:heart"
-              size="small"
-              class="icon-align"
-            ></lightning-icon>
-            {balance.bereavementLeave}
-          </p>
-          <p>Hours Available</p>
-        </div>
-      </div>
-    </div>
-  </lightning-card>
+    </lightning-card>
 </template>

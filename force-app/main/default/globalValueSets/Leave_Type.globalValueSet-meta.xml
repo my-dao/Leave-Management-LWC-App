@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Annual Leave</fullName>
+        <default>false</default>
+        <label>Annual Leave</label>
+    </customValue>
+    <customValue>
+        <fullName>Sick Leave</fullName>
+        <default>false</default>
+        <label>Sick Leave</label>
+    </customValue>
+    <customValue>
+        <fullName>Work from Anywhere</fullName>
+        <default>false</default>
+        <label>Work from Anywhere</label>
+    </customValue>
+    <customValue>
+        <fullName>Volunteer Leave</fullName>
+        <default>false</default>
+        <label>Volunteer Leave</label>
+    </customValue>
+    <customValue>
+        <fullName>Unpaid Leave</fullName>
+        <default>false</default>
+        <label>Unpaid Leave</label>
+    </customValue>
+    <customValue>
+        <fullName>Bereavement Leave</fullName>
+        <default>false</default>
+        <label>Bereavement Leave</label>
+    </customValue>
+    <masterLabel>Leave Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
